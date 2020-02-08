@@ -1,0 +1,42 @@
+{
+    /*********************** GENERAL SETTINGS *********************/
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "extensions.ignoreRecommendations": true,
+    "telemetry.enableTelemetry": false,
+    /*********************** APPEARANCE SETTINGS *********************/
+    "editor.minimap.enabled": false,
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.activityBar.visible": true,
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "window.zoomLevel": 0,
+    /*********************** TERMINAL SETTINGS *********************/
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.env.windows": {
+    "CMDER_ROOT": "C:\\cmder"
+    },
+    "terminal.integrated.shellArgs.windows": [
+      "/k C:\\cmder\\vendor\\init.bat"
+    ],
+    /*********************** LANGUAGE SETTINGS *********************/
+    "[python]": {},
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "java.home": "C:\\Program Files\\Java\\jdk-12.0.2",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "git.ignoreLegacyWarning": true,
+    "terminal.integrated.rendererType": "dom",
+    "workbench.colorTheme": "One Dark Pro",
+}
