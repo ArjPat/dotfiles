@@ -1,10 +1,26 @@
 {
     /*********************** GENERAL SETTINGS *********************/
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "extensions.ignoreRecommendations": true,
     "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "extensions.autoUpdate": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.ignoreLegacyWarning": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "node_modules": true,
+      "**/vendor": true,
+      "build": true
+    },
+  
     /*********************** APPEARANCE SETTINGS *********************/
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.enabled": false,
     "workbench.statusBar.feedback.visible": false,
     "workbench.activityBar.visible": true,
@@ -15,28 +31,52 @@
     "workbench.statusBar.visible": true,
     "workbench.sideBar.location": "left",
     "window.zoomLevel": 0,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.rulers": [80, 120],
+  
     /*********************** TERMINAL SETTINGS *********************/
+    "terminal.integrated.rendererType": "dom",
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "terminal.integrated.env.windows": {
-    "CMDER_ROOT": "C:\\cmder"
+      "CMDER_ROOT": "C:\\cmder"
     },
-    "terminal.integrated.shellArgs.windows": [
-      "/k C:\\cmder\\vendor\\init.bat"
-    ],
+    "terminal.integrated.shellArgs.windows": ["/k C:\\cmder\\vendor\\init.bat"],
+  
     /*********************** LANGUAGE SETTINGS *********************/
-    "[python]": {},
-    "python.linting.pylintArgs": [
-        "--load-plugins=pylint_django"
-    ],
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+      "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+      "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
     "java.home": "C:\\Program Files\\Java\\jdk-12.0.2",
     "java.configuration.checkProjectSettingsExclusions": false,
-    "git.ignoreLegacyWarning": true,
-    "terminal.integrated.rendererType": "dom",
-    "workbench.colorTheme": "One Dark Pro",
-}
+    "java.semanticHighlighting.enabled": true,
+    "cSpell.userWords": [
+      "mahesh"
+    ],
+    "mssql.connections": [
+    ],
+    "intelephense.diagnostics.undefinedClassConstants": false,
+    "intelephense.diagnostics.undefinedConstants": false,
+    "intelephense.diagnostics.undefinedFunctions": false,
+    "intelephense.diagnostics.undefinedMethods": false,
+    "intelephense.diagnostics.undefinedTypes": false,
+    "intelephense.diagnostics.undefinedSymbols": false,
+    "intelephense.diagnostics.undefinedProperties": false
+  }
+  
