@@ -12,16 +12,10 @@ Set-Theme Paradox
 
 # Aliases
 New-Alias open ii
+New-Alias vim 'C:\Program Files\Vim\vim82\vim.exe'
 
 Function tail {
     Get-Content -Tail $args[0] $args[1] -Wait
-}
-
-Function serve {
-    $ids = @()
-    $ids += Start-Process -NoNewWindow -PassThru powershell 'tail 5 .\web\logs\index_php.log';
-    $ids += Start-Process -NoNewWindow -PassThru powershell 'php -S 127.0.0.1:8080 -t .\web\'
-    return $ids
 }
 
 #region conda initialize

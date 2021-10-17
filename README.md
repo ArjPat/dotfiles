@@ -1,3 +1,16 @@
-# Config Files
-Personal configuration files
-* I lost my updated bash and vimrc after laptop got wiped check if ilab still has it
+# DOTFILES
+
+## Editor
+- `settings.json` vscode settings
+
+## Git
+- `.gitconfig` git aliases
+- `.gitignore` global gitignore
+
+## Run Commands
+- `.bashrc` bash aliases and config
+- `.vimrc` vim mappings and config
+
+## Windows
+- `profile.ps1` powershell profile
+- `settings.json` windows terminal profiles and config

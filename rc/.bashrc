@@ -1,7 +1,6 @@
-  # ~/.bashrc: executed by bash(1) for non-login shells.
+# ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-#I LOST MY ORIGINAL WITH STUFFFFFFFFFFFFFF
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -84,15 +83,20 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 # colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias lsl='ls -alF'
-alias home='cd /mnt/c/users/Arjun/'
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
+# Add an "alert" alias for long running commands.  Use like so: sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+alias python='python3'
+alias pip='pip3'
+alias tf='terraform'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -113,3 +117,16 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then 
+	__GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share" 
+	source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
+fi 
+
+# mac
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+export EDITOR=vim
+export VISUAL=vim
